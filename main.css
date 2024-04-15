@@ -1,0 +1,161 @@
+body {
+cursor: url('images/cursor.png'), auto;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0e0e; 
+    color: #ddd;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.code-container {
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 320px);
+}
+
+pre {
+    background-color: #111;
+    color: #407266;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.copy-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px; 
+    background-image: url('images/copy.png');
+    background-size: cover;
+    cursor: url('cursor.html'), auto; /* Change cursor style */
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.code-container:hover .copy-icon {
+    opacity: 1; 
+}
+
+a:hover {
+    transition:.4s!important;
+    color:rgb(190, 190, 190)!important;
+    text-shadow: 0 0 0.40em rgb(190, 190, 190);
+  }
+  span::before {
+    content:'\A';
+    white-space:pre
+  }
+  #overlay-toggle {
+    position:absolute;
+    display: none;
+  }
+  .debold{
+    font-weight:normal
+  }
+  .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .overlay {
+    z-index: 1;
+    background-color: black;
+  }
+  .overlay label {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vw;
+    color: rgb(64, 114, 112);
+    font-size: 2rem;
+    cursor: url("../images/redcur.png"), default;
+  }
+  .no-hover {
+    display: block;
+  }
+  .hover {
+    display: none;
+  }
+  .fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .text-content {
+    background: rgba(0, 0, 0, 0);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: rgb(195, 4, 6);
+  }
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .text-content p {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 31px;
+    padding-left: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 0.0;
+    color: rgb(4, 4, 4);
+    display: flex;
+  }
+  .text-content a {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    line-height: 0.0;
+    color: #a60404;
+    display: flex;
+  }
+  #overlay-toggle:checked ~ .overlay {
+    animation-fill-mode: forwards;
+    animation-name: fade, hide;
+    animation-delay: 0s, 600ms;
+    animation-duration: 900ms, 1ms;
+  }
+  #overlay-toggle:checked ~ .overlay label {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-duration: 900ms;
+  }
+  @media(hover: hover) {
+    .hover {
+      display: block;
+    }
+    .no-hover {
+      display: none;
+    }
+  }
+  @keyframes fade{
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes hide {
+    to {
+      visibility: hidden;
+    }
+    
+  }
+  
