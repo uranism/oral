@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="oral :3">
+    <meta property="og:description" content="oral oral oral oral oral">
+    <meta property="og:url" content="index-2.html">
+    <title>oral</title>
+    <style>
+        body {
+    cursor: url('images/cursor.png'), auto;
+}
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f0e0e; 
+            color: #ddd;
+            min-height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .code-container {
+            position: relative;
+            width: 80%;
+            margin-top: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 320px);
+        }
+
+        pre {
+            background-color: #111;
+            color: #407266;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .copy-icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 16px;
+            height: 16px; 
+            background-image: url('images/copy.png');
+            background-size: cover;
+            cursor: url('cursor.html'), auto; /* Change cursor style */
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+        }
+
+        .code-container:hover .copy-icon {
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container">
+        <pre id="code-block">                      
+            ▄██████▄     ▄████████    ▄████████  ▄█       
+            ███    ███   ███    ███   ███    ███ ███       
+            ███    ███   ███    ███   ███    ███ ███       
+            ███    ███  ▄███▄▄▄▄██▀   ███    ███ ███       
+            ███    ███ ▀▀███▀▀▀▀▀   ▀███████████ ███       
+            ███    ███ ▀███████████   ███    ███ ███       
+            ███    ███   ███    ███   ███    ███ ███▌    ▄ 
+             ▀██████▀    ███    ███   ███    █▀  █████▄▄██ 
+                         ███    ███              ▀                                                                                                           
+                                                                                                              
+               
+            <span class="copy-icon" onclick="copyCode()"></span>
+        </pre>
+    </div>
+
+    <script>
+        function copyCode() {
+            var codeBlock = document.getElementById("code-block");
+            var range = document.createRange();
+            range.selectNode(codeBlock);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+
+</body></html>
