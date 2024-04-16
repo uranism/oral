@@ -1,83 +1,74 @@
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8">
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="oral">
-    <meta property="og:description" content="soon... @uranism ">
-    <meta property="og:url" content="index-2.html">
-    <title>oral</title>
-    <link rel="stylesheet" href="main.css">
-</head>
+    <title>Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        background: rgb(52, 56, 60);
+        color: white;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
 
+      h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 24px;
+      }
 
+      .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
 
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        max-width: 364px;
+        padding: 24px;
+        background: white;
+        color: rgb(14, 30, 37);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+      }
 
+      a {
+        margin: 0;
+        font-weight: 600;
+        line-height: 24px;
+        color: #054861;
+      }
 
+      a svg {
+        position: relative;
+        top: 2px;
+      }
 
-<body>
+      a:hover,
+      a:focus {
+        text-decoration: none;
+      }
 
+      a:hover svg path {
+        fill: #007067;
+      }
 
-
-    <input type="checkbox" autocomplete="off" id="overlay-toggle">
-    <div class="overlay fullscreen">
-      <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
-        <span class="no-hover" style="font-family: mono; font-size: 0.6em">enter</span>
-        <span class="hover" style="font-family: derk; font-size: 0.6em">
-          <span class="overlay-label" style="background: url('images/snow2.gif')">
-            <a>enter.</a>
-          </span>
-        </span>
-      </label>
-    </div>
-    <audio loop="" preload="auto" id="audio">
-      <source src="oral.mp3" type="audio/mp3">
-    </audio>
-
-    
-    
-    <div class="code-container">
-        <pre id="code-block">             
-          
-          
-          
-            ▄██████▄     ▄████████    ▄████████  ▄█       
-            ███    ███   ███    ███   ███    ███ ███       
-            ███    ███   ███    ███   ███    ███ ███       
-            ███    ███  ▄███▄▄▄▄██▀   ███    ███ ███       
-            ███    ███ ▀▀███▀▀▀▀▀   ▀███████████ ███       
-            ███    ███ ▀███████████   ███    ███ ███       
-            ███    ███   ███    ███   ███    ███ ███▌    ▄ 
-             ▀██████▀    ███    ███   ███    █▀  █████▄▄██ 
-                         ███    ███              ▀                                                                                                           
-                                                                                                              
-               
-            <span class="copy-icon" onclick="copyCode()"></span>
-        </pre>
-    </div>
-
-    <script>
-        function copyCode() {
-            var codeBlock = document.getElementById("code-block");
-            var range = document.createRange();
-            range.selectNode(codeBlock);
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            window.getSelection().removeAllRanges();
-        }
-
-        function audioPlay() {
-          var audio = document.getElementById("audio");
-          audio.volume = 0.1;
-          audio.play();
-        }
-
-        function videoPlay() {
-          var video = document.getElementById("video");
-          video.play();
-        }
-    </script>
-
-
-</body></html>
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
